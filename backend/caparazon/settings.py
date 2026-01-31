@@ -20,14 +20,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-#TODO: Replace with terraform generated secret key
+# TODO: Replace with terraform generated secret key
 SECRET_KEY = "{{secret_key}}"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#TODO: Replace with terraform generated debug value
+# TODO: Replace with terraform generated debug value
 DEBUG = "{{debug}}"
 
-#TODO: Update allowed hosts for production, from terraform?
+# TODO: Update allowed hosts for production, from terraform?
 ALLOWED_HOSTS = "{{allowed_hosts}}".split(",")
 
 
@@ -109,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = "es-es"
 
 # Ecuador Time Zone
-TIME_ZONE = "UTC-5"
+TIME_ZONE = "America/Quito"
 
 USE_I18N = True
 
